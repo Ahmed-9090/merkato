@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="detailsViewmodel"
+            type="com.example.mekato_tessst.ProductsViewModel" /> <!-- ViewModel -->
+        <variable
+            name="exDetails"
+            type="com.example.mekato_tessst.Products" /> <!-- Product Details -->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{exDetails.title}" /> <!-- Bind to the product name -->
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{exDetails.description}" /> <!-- Bind to the product description -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/product_details_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:scrollbars="vertical" />
+
+        <!-- Add the Add to Cart button here -->
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart" />
+
+
+
+    </LinearLayout>
+</layout>

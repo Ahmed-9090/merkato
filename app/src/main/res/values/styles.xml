@@ -1,0 +1,14 @@
+<resources>
+    <!-- Text appearance for active item -->
+    <style name="ActiveLabelText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Text appearance for inactive item -->
+    <style name="InactiveLabelText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/nav_icon_inactive_color</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_products"
+        android:icon="@drawable/shopic"
+
+        />
+
+    <item
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/newcart"
+
+        />
+
+    <item
+        android:id="@+id/menu_user"
+        android:icon="@drawable/ic_user"
+
+        />
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- Primary dark color -->
+    <color name="colorPrimaryDark">#303F9F</color>
+
+
+    <!-- Background color -->
+    <color name="colorBackground">#FFFFFF</color>
+
+    <!-- Text color -->
+    <color name="colorTextPrimary">#000000</color>
+
+    <!-- Text color secondary -->
+    <color name="colorTextSecondary">#757575</color>
+
+    <!-- Button color -->
+    <color name="colorButton">#FF5722</color>
+
+    <!-- Divider color -->
+    <color name="colorDivider">#BDBDBD</color>
+
+    <!-- Error color -->
+    <color name="colorError">#D32F2F</color>
+    <color name="google_btn_neutral">#F2F2F2</color>
+    <color name="google_btn_font_night">#E3E3E3</color>
+    <color name="google_btn_font_day">#1F1F1F</color>
+    <color name="google_btn_stroke_day">#747775</color>
+    <color name="google_btn_stroke_night">#8E918F</color>
+    <color name="nav_background_color">#1A1A1A</color> <!-- Dark background or gradient -->
+    <color name="nav_icon_color">#FFFFFF</color> <!-- Icon color for normal state -->
+    <color name="nav_icon_selected_color">#F5A623</color> <!-- Icon color for selected state -->
+    <color name="nav_ripple_color">#A5D6A7</color> <!-- Ripple effect color -->
+
+
+    <color name="nav_background_transparent">#801E88E5</color> <!-- 50% transparent blue -->
+
+    <color name="nav_background_transparent_black">#99000000</color> <!-- 60% transparent black -->
+
+
+    <color name="blue1">#1d4bcf</color> <!-- Define the blue color used in the text -->
+
+
+    <color name="blue">#459DE4</color>
+    <color name="red">#FF0000</color>
+
+
+    <color name="themeColor">#11CFC5</color>
+
+    <!--normal colors-->
+    <color name="darkTextColor">#020000</color>
+
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">#11CFC5</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#11CFC5</color>
+
+
+    <color name="nav_icon_inactive_color">#757575</color> <!-- Inactive icon/text color -->
+
+
+
+
+</resources>

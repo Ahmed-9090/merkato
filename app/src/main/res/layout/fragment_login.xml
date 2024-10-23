@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_split"
+        android:padding="@dimen/layout_padding">
+
+        <ImageView
+
+            android:id="@+id/merkato_logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/logomerkato1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Logo/Image (Shopping Cart Icon) -->
+        <ImageView
+
+            android:id="@+id/logo"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="@dimen/logo_margin_bottom"
+            android:src="@drawable/cart_blue"
+            app:layout_constraintBottom_toTopOf="@id/username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/merkato_logo"
+            />
+
+        <!-- Username Field -->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/field_margin_bottom"
+            android:background="@drawable/edittext_bg_selector"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:hint="Username"
+            android:padding="@dimen/input_padding"
+            android:textColor="@color/edittext_text_color_selector"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintWidth_percent="0.9" />
+
+
+
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/field_margin_bottom"
+            android:background="@drawable/edittext_bg_selector"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="@dimen/input_padding"
+            android:textColor="@color/edittext_text_color_selector"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/login_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="@dimen/button_padding"
+            android:text="LOGIN"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/button_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <!-- Signup Button -->
+        <Button
+            android:id="@+id/signup_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="@dimen/button_padding"
+            android:text="SIGN UP"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/button_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_button"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <!-- Forgot Password Text -->
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:text="Forgot password?"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_split"
+        android:padding="@dimen/layout_padding">
+
+        <ImageView
+
+            android:id="@+id/merkato_logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/logomerkato1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <!-- Logo/Image (Shopping Cart Icon) -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+
+            android:layout_marginBottom="@dimen/logo_margin_bottom"
+            android:src="@drawable/cart_blue"
+            app:layout_constraintBottom_toTopOf="@id/Firstname_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/merkato_logo"
+              />
+
+        <EditText
+            android:id="@+id/Firstname_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/field_margin_bottom"
+            android:background="@drawable/edittext_bg_selector"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:hint="First name"
+            android:padding="@dimen/input_padding"
+
+            android:textColor="@color/edittext_text_color_selector"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintWidth_percent="0.9" />
+
+
+
+
+        <EditText
+            android:id="@+id/Lastname_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/field_margin_bottom"
+            android:background="@drawable/edittext_bg_selector"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:hint="Last name"
+            android:padding="@dimen/input_padding"
+            android:textColor="@color/edittext_text_color_selector"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Firstname_signup"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/field_margin_bottom"
+            android:background="@drawable/edittext_bg_selector"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:hint="Email"
+            android:padding="@dimen/input_padding"
+            android:textColor="@color/edittext_text_color_selector"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Lastname_signup"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/field_margin_bottom"
+            android:background="@drawable/edittext_bg_selector"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="@dimen/input_padding"
+            android:textColor="@color/edittext_text_color_selector"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/text_size_normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/SignButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/button_margin_bottom"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:padding="@dimen/button_padding"
+            android:text="Sign Up"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/button_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            app:layout_constraintWidth_percent="0.9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
