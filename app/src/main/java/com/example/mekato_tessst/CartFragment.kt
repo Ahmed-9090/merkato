@@ -12,7 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mekato_tessst.databinding.FragmentCartBinding
 
-class Cart_frag : Fragment() {
+class CartFragment : Fragment() {
     private lateinit var binding: FragmentCartBinding
     private lateinit var viewModel: P_ViewModel
     private lateinit var productViewModel: ProductsViewModel
@@ -28,8 +28,8 @@ class Cart_frag : Fragment() {
             findNavController().popBackStack()
         }
 
-        viewModel = ViewModelProvider(this).get(P_ViewModel::class.java)
-        productViewModel = ViewModelProvider(this).get(ProductsViewModel::class.java)
+        viewModel = ViewModelProvider(this)[P_ViewModel::class.java]
+        productViewModel = ViewModelProvider(this)[ProductsViewModel::class.java]
 
         // Initialize adapter with an empty product list and empty lambda functions
         adapter = Cart_adapter(emptyList(), { _, _ -> }, { _ -> }) // Provide empty lambdas (as a placeholders )
